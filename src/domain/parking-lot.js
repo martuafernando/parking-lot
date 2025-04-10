@@ -1,5 +1,5 @@
-const Car = require("./car");
-const ParkingTicket = require("./parking-ticket");
+const Car = require("./car")
+const ParkingTicket = require("./parking-ticket")
 
 class ParkingLot {
   #availableSlot
@@ -7,8 +7,8 @@ class ParkingLot {
   #incremental = 1
 
   constructor(maximumSlot) {
-    if (!maximumSlot) throw new Error("maximumSlot is required");
-    this.#availableSlot = maximumSlot;
+    if (!maximumSlot) throw new Error("maximumSlot is required")
+    this.#availableSlot = maximumSlot
   }
 
   park(car) {
@@ -52,4 +52,4 @@ class ParkingLot {
   }
 }
 
-module.exports = ParkingLot;
+module.exports = ParkingLot
